@@ -4,13 +4,18 @@ import sqlite3
 #Menu function
 def menu():
     #Request that user input their menu choice
-    menu_choice = input('''Select an option from the menu below
-    1. Enter book
-    2. Update book
-    3. Delete book
-    4. Search books
-    0. Exit
-    : ''')
+    while True:
+        try:
+            menu_choice = int(input('''Select an option from the menu below
+                                        1. Enter book
+                                        2. Update book
+                                        3. Delete book
+                                        4. Search books
+                                        0. Exit
+                                        : '''))
+            break
+        except ValueError:
+            print("You have entered an invalid entry. Please try again.")
     return menu_choice #Return the menu choice
 
 #Add all books to database
@@ -215,7 +220,7 @@ def update_book(name_of_table_):
     ebookstore.close()   
 
 #Delete book from the database
-def del_book(table_name_):
+def delete_book(table_name_):
     try: 
         #Create or open a file that matches the contents of the variable table_name_
         ebookstore = sqlite3.connect(table_name_)
@@ -328,17 +333,17 @@ create_database(table_name) #create the database
 #menu option
 while True:
     menu_option = menu()
-    if menu_option == "1": 
+    if menu_option == 1: 
         enter_book(table_name)
-    elif menu_option == "2":
+    elif menu_option == 2:
         update_book(table_name)
-    elif menu_option == "3":
-        del_book(table_name)
-    elif menu_option == "4":
+    elif menu_option == 3:
+        delete_book(table_name)
+    elif menu_option == 4:
         search_book(table_name)
-    elif menu_option == "0":
+    elif menu_option == 0:
         print("Goodbye!")
         exit()
     else:
         #Display an error message if the user entered an incorrect menu option
-        print("You have entered an incorrect menu option. Please try again. ")
+        print("This menu option does not exist. Please try again. ")
