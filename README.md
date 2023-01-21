@@ -1,4 +1,4 @@
-#** About the project**#
+# About the project
 ##** Project name** Bookstore system
 
 ##** Project Description** 
