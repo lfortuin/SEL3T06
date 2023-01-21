@@ -1,8 +1,8 @@
 # About the project
-** Project name:** 
+**Project name:** 
   Bookstore system
 
-** Project Description **
+**Project Description**
   A program that can be used by a bookstore clerk. The program should allow the clerk to:
     *add new books to the database
     *update book information
