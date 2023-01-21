@@ -11,7 +11,7 @@
 
 # Table of Contents
 1. [Installation](#install)
-2. [Usage tips](#usage) 
+2. [Usage](#usage) 
 3. [Links](#links)
 
 <a name="install"></a>
