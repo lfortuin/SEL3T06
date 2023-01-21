@@ -10,9 +10,9 @@
  + search the database to find a specific book
 
 # Table of Contents
-1. [Installation]{#install}
-2. [Usage tips]{#usage} 
-3. [Links]{#links}
+1. Installation{#install}
+2. Usage tips{#usage} 
+3. Links{#links}
 
 <a name="install"></a>
 # 1. Installation
