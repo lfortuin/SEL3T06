@@ -16,8 +16,8 @@
 
 <a name="install"></a>
 # 1. Installation
-*Download Python [here](https://www.python.org/downloads/)
-*Download Visual Studio Code [here](https://code.visualstudio.com/download)
++Download Python [here](https://www.python.org/downloads/)
++Download Visual Studio Code [here](https://code.visualstudio.com/download)
 
 <a name="usage"></a>
 # 2. Usage
